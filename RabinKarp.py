@@ -28,7 +28,7 @@ def Rabin_Karp(text,pattern):
     
     if ht==hp:
         print "Hash matched in the beginning"
-        if naive_match(text[0],pattern):
+        if naive_match(text[0:m],pattern):
             print "Strings matched too"
             return
         
