@@ -12,6 +12,8 @@ def find(x):
 def merge(x,y):
     px=find(x)
     py=find(y)
+    if px==py:
+        return
     if px.rank > py.rank:
         py.parent=px
     else:
